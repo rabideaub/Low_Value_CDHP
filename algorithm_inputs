@@ -1,0 +1,8 @@
+#!/bin/bash
+#sas low_qual_build.sas -memsize 64G -sortsize 56G -sumsize 56G
+#sas low_qual_procs2.sas -memsize 64G -sortsize 56G -sumsize 56G
+#sas calc_costs.sas -memsize 64G -sortsize 56G -sumsize 56G
+sas year_num_denom2.sas -memsize 64G -sortsize 56G -sumsize 56G
+sas demog_table_did2.sas -memsize 64G -sortsize 56G -sumsize 56G
+#sas cdhp_did.sas -memsize 64G -sortsize 56G -sumsize 56G
+stata-mp -b low_qual_models_q2q3.do
